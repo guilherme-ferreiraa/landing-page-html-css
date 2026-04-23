@@ -1,0 +1,212 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>As mais belas praias</title>
+</head>
+<body>
+    <header class="hero" id="topo">
+        
+        <nav class="menu" aria-label="Navegação principal">
+            <a class="logo" href="#topo">Praias pelo mundo</a>
+            <ul>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#guia">Guia de viagens</a></li>
+                <li><a href="#planeje">Planeje seu destino</a></li>
+            </ul>
+        </nav>
+
+         <section class="hero-conteudo">
+            <p class="eyebrown">Praias mais belas para visitar</p>
+            <h1>Uma vitrine das praias mais exuberantes e bem avaliadas pelo mundo</h1>
+            <p class="descricao">
+                Iremos em HTML: organizar conteúdos,
+                hierarquia de títulos, texto com significado,
+                imagens, navegação e elementos interativos.
+            </p>
+            <div class="acoes">
+                <a class="botao primario" href="#destinos">Explorar Praias</a>
+                <a class="botao secundario" href="#guia">Ver referências</a>
+            </div>
+         </section>
+
+    </header>
+
+     <main>
+        <section class="secao" id="destinos">
+            <div class="secao-titulo">
+                <p class="rotulo">Flow Content</p>
+                <h2>Destinos que representam uma diversidade
+                de litorais deslumbrantes</h2>
+                <p>
+                Utilizaremos blocos de conteúdo, textos, listas,
+                imagens e títulos para organizar a leitura da página
+                de forma clara e semântica.
+                </p>
+            </div>
+
+            <div class="cards">
+                <article class="card">
+                    <figure>
+                        <img src="./img/bora-bora.jpg" alt="Mar azul, areia clara em Bora Bora">
+                        <figcaption>Praia em Bora Bora, Polinésia Francesa</figcaption>
+                    </figure>
+                    <h3>Praia de Matira</h3>
+                    <p>
+                        Conhecida pelas águas cristalinas, chalés em meio
+                        ao mar, atendimento VIP, contato com a natureza
+                        em uma experiência incrível.
+                    </p>
+                    <p class="destaque-texto">
+                        Destaque: <strong>águas cristalinas</strong>, <em>mergulho inesquecível</em>
+                        e paisagens preservadas.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <img src="./img/maragogi.jpg" alt="Mar azul, areia clara em Maragogi">
+                        <figcaption>Praia em Maragogi, Brasil</figcaption>
+                    </figure>
+                    <h3>Galés de Maragogi</h3>
+                    <p>
+                        Conhecida pelas águas cristalinas, piscinas naturais
+                        e passeios inesquecíveis.
+                    </p>
+                   
+                    <ul>
+                        <li>Mar em tons azul turquesa</li>
+                        <li>Passeios de barco</li>
+                        <li>Ótima opção para famílias</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <figure>
+                        <img src="./img/arraial.jpg" alt="Mar azul, areia clara em Arraial do Cabo">
+                        <figcaption>Praia em Arraial do Cabo, Brasil</figcaption>
+                    </figure>
+                    <h3>Praia de Arraial</h3>
+                    <p>
+                        Conhecida pelas águas cristalinas e areia branca,
+                        considerada um dos "caribes brasileiros".
+                    </p>
+                    <a class="link-card" href="#planeje">Monte seu roteiro de viagem</a>
+                    
+                </article>
+            </div>
+        </section>
+
+        <section class="secao-guia" id="guia">
+            <div class="secao-titulo">
+                <p class="rotulo">Guia de viagens</p>
+                <h2>Descoberta de praias mais seguras e de fácil acesso.</h2>
+            </div>
+
+            <div class="grade-guia">
+                <article class="bloco-guia">
+                    <h3>Estrutura básica</h3>
+                    <p>
+                        O documento começa com <code>&lt;!DOCTYPE html&gt;</code>, define <code>lang="pt-br"</code> e organiza o conteúdo em <code>head</code> e <code>body</code>.
+                    </p>
+                </article>
+
+                <article class="bloco-guia">
+                    <h3>Heading content</h3>
+                    <p>
+                        A hierarquia com <code>h1</code>, <code>h2</code> e <code>h3</code> deixa os assuntos bem distribuídos e facilita a leitura.
+                    </p>
+                </article>
+
+                <article class="bloco-guia">
+                    <h3>Phrasing Content</h3>
+                    <p>
+                        Elementos como <code>strong</code>, <code>em</code>, <code>a</code> e <code>code</code> enriquecem o texto sem perder a semântica.
+                    </p>
+                </article>
+
+                <article class="bloco-guia">
+                    <h3>Embedded Content</h3>
+                    <p>
+                        Imagens e vídeos ajudam a tornar a experiência mais visual e informativa.
+                    </p>
+                </article>
+
+                <article class="bloco-guia">
+                    <h3>Interactive Content</h3>
+                    <p>
+                       Links, botões e formulários permitem interação com o usuário.
+                    </p>
+                </article>
+
+                <article class="bloco-guia destaque-guia">
+                    <h3>Organização HTML5 | Praias</h3>
+                    <p>
+                        A página utiliza uma divisão lógica do conteúdo, deixando o código mais limpo, legível e fácil de expandir.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao planejamento" id="planeje">
+            <div class="secao-titulo">
+                <p class="rotulos">Interactive Content</p>
+                <h2>Monte seu próximo roteiro de viagem</h2>
+                <p>
+                    Este formulário representa a parte interativa da página.
+                </p>
+            </div>
+
+             <div class="painel-planjamento">
+                <form class="formulario">
+                    <label for="praia">Praia Desejada</label>
+                    <input type="text" name="praia" id="praia" placeholder="Ex: Praia de Marajó">
+
+                    <label for="regiao">Região</label>
+                    <select name="regiao" id="regiao">
+                        <option>Norte</option>
+                        <option>Sul</option>
+                        <option>Sudeste</option>
+                        <option>Oeste</option>
+                    </select>
+
+                    <label for="perfil">Perfil</label>
+                    <select name="perfil" id="perfil">
+                        <option>Lazer</option>
+                        <option>Mergulho</option>
+                        <option>Família</option>
+                        <option>Aventura</option>
+                        <option>Negócio</option>
+                    </select>
+
+                    <button type="submit">Simular Viagem</button>
+                </form>
+                
+                <aside class="dicas">
+                    <h3>Dicas rápidas</h3>
+                    <p>
+                        Praias ao redor do mundo que combinam conforto, segurança e natureza.
+                    </p>
+                    <ol>
+                        <li>Prefira viajar fora da alta temporada</li>
+                        <li>Verifique a tábua das marés</li>
+                        <li>Respeite as áreas preservadas</li>
+                    </ol>
+                </aside>
+             </div>
+         </section>
+     </main>
+
+    <footer>
+        <p>Projeto em HTML5 e CSS sobre praias no mundo</p>
+        <p>Exemplo construído com base no material de aula</p>
+    </footer>
+    
+</body>
+</html>
+```
+
+```

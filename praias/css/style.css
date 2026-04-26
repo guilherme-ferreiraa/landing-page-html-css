@@ -196,3 +196,58 @@ li {
     padding: 1rem;
     border-radius: 12px;
 }
+
+/* =========================
+   SEÇÃO GUIA
+========================= */
+
+.guia {
+    background: linear-gradient(180deg, #fffaf1, #f3e7c9);
+    padding: 60px 20px;
+}
+
+/* =========================
+   GRADE DO GUIA
+========================= */
+
+.grade-guia {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* =========================
+   BLOCOS DO GUIA
+========================= */
+
+.bloco-guia {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* =========================
+   BLOCO EM DESTAQUE
+========================= */
+
+.destaque-guia {
+    background: linear-gradient(160deg,
+    rgba(10, 92, 120, 0.95),
+    rgba(22, 166, 182, 0.8));
+    color: #ffffff;
+}
+
+/* =========================
+   ELEMENTO CODE (PONTO DA ATIVIDADE)
+========================= */
+
+.destaque-guia code {
+    color: #ffffff;
+    background: rgba(255,255,255,0.15);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}

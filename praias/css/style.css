@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Fraunces&display=swap');
+
 :root {
     --areia: #f3e7c9;
     --espuma: #fffaf1;
@@ -22,12 +24,20 @@ html {
 
 body {
     margin: 0;
-    font-family: sans-serif;
-    /* proxima aula, instalarmos fonte com google APIs Manrope */
+    font-family: 'Manrope', sans-serif;
     color: var(--texto);
-    background: radial-gradient(circle at top right,
-    rgba(245, 166, 35, 0.18), transparente 18%), linear-gradient(180deg, #f6fbfc, 0%, #eef7f8 35%, #fff9f1 100%);
 
+    background: 
+        radial-gradient(circle at top right,
+            rgba(245, 166, 35, 0.18),
+            transparent 18%
+        ),
+        linear-gradient(
+            180deg,
+            #f6fbfc 0%,
+            #eef7f8 35%,
+            #fff9f1 100%
+        );
 }
 
 img {
@@ -37,4 +47,152 @@ img {
 
 a {
     color: inherit;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    padding: 1.5rem 6vw 4rem;
+    background:
+        linear-gradient(135deg,
+            rgba(7, 59, 76, 0.12),
+            rgba(22,166,182,0.68)
+        ),
+        url(https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80) center/cover;
+    color: #ffffff;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 0.6rem 0.95rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+}
+
+/* HERO CONTEÚDO */
+.hero-conteudo {
+    padding: 12vh 0 0;
+    max-width: 720px;
+}
+
+.eyebrow,
+.rotulo {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.hero,
+.secao h2,
+.bloco-guia h3,
+.dicas h3 {
+    font-family: 'Fraunces', sans-serif;
+}
+
+.hero h1 {
+    margin: 0.5rem 0 1rem;
+    font-size: clamp(2.7rem, 6vh, 5.2rem);
+    line-height: 0.95;
+}
+
+.descricao {
+    max-width: 58ch;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.88);
+}
+
+/* BOTÕES */
+.acoes {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.botao-primario,
+.botao-secundario {
+    display: inline-block;
+    padding: 0.95rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.botao-primario {
+    background: var(--sol);
+    color: #08212c;
+}
+
+.botao-secundario {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+/* SEÇÕES */
+.secao {
+    padding: 5rem 6vw;
+}
+
+.secao-titulo {
+    max-width: 760px;
+    margin-bottom: 2.4rem;
+}
+
+.secao h2 {
+    margin: 0.35rem 0.8rem;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.05;
+}
+
+/* TEXTOS */
+.card p,
+.bloco-guia p,
+.dicas p,
+.formulario label,
+.rodape p,
+li {
+    line-height: 1.7;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.card,
+.bloco-guia,
+.painel-planejamento {
+    background: #eef7f8;
+    border: 1px solid var(--borda);
+    padding: 1rem;
+    border-radius: 12px;
 }

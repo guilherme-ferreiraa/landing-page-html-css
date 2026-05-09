@@ -197,18 +197,14 @@ li {
     border-radius: 12px;
 }
 
-/* =========================
-   SEÇÃO GUIA
-========================= */
+
 
 .guia {
     background: linear-gradient(180deg, #fffaf1, #f3e7c9);
     padding: 60px 20px;
 }
 
-/* =========================
-   GRADE DO GUIA
-========================= */
+
 
 .grade-guia {
     display: grid;
@@ -216,9 +212,7 @@ li {
     gap: 25px;
 }
 
-/* =========================
-   BLOCOS DO GUIA
-========================= */
+
 
 .bloco-guia {
     background: #ffffff;
@@ -229,9 +223,7 @@ li {
     line-height: 1.6;
 }
 
-/* =========================
-   BLOCO EM DESTAQUE
-========================= */
+
 
 .destaque-guia {
     background: linear-gradient(160deg,
@@ -240,9 +232,7 @@ li {
     color: #ffffff;
 }
 
-/* =========================
-   ELEMENTO CODE (PONTO DA ATIVIDADE)
-========================= */
+
 
 .destaque-guia code {
     color: #ffffff;
@@ -251,3 +241,301 @@ li {
     border-radius: 4px;
     font-size: 0.9em;
 }
+
+code{
+    padding: 0.15rem 0.4rem;
+    border-radius: 8px;
+    background: rgba(7, 59, 76, 0.08);
+    font-family: 'Consolas',monospace;
+}
+
+.painel-planejamento {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 1.4rem ;
+    padding: 1.5rem;
+}
+
+.formulario{
+    display: grid;
+    gap: 0.85rem;
+}
+
+.formulario input,
+.formulario select,
+.formulario button{
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border-radius: 16px;
+    border: 1px solid;
+    font: inherit;
+}
+
+.formulario input
+.formulario select{
+    background:#ffffff;
+}
+
+.formulario button{
+    background: var(--oceano-profundo);
+    color:#ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.dicas{
+    padding: 0.4rem 0.4rem 0.4rem 0;
+}
+
+.dicas h3{
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.rodape{
+    padding: 2rem 6vw 3rem;
+    color:var(--texto-suave);
+}
+
+@media (max-width: 980px){
+    .cards,
+    .grade-guia,
+    .painel-planejamento{
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-bottom: 3rem;
+    }
+
+}
+
+@media (max-width: 640px){
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-links {
+        flex-wrap: wrap;
+    }
+
+    .hero-conteudo{
+        padding-top: 4rem;
+    }
+
+    .secao,
+    .hero,
+    .rodape {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+
+    }
+}
+
+.grade-definicoes,
+.grade-recursos {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 1.rem;
+}
+
+.card-definicao,
+.recurso,
+.quadro-info,
+.bloco-explicacao {
+    background: rgba(255,255,255,0.86);
+    border: 1px solid var(--borda);
+    border-radius: 28px;
+    box-shadow: var(--sombra);
+}
+
+.card-definicao,
+.recurso,
+.bloco-explicacao{
+    padding: 1.5rem;
+}
+
+.card-definicao h3,
+.recurso h3,
+.coluna-info h3,
+.bloco-explicacao {
+    margin-top: 0px;
+    margin-bottom: 0.8rem;
+    font-family: 'Fraunces'serif;
+    font-size: 1.35rem;
+}
+
+.destaque-definicao{
+    background: linear-gradient(
+        160deg,
+        color rgba(235,111,77,0.92),
+        color rgba(245,166,35,0.82),
+
+
+    );
+    color: #ffffff;
+}
+
+.secao-suave {
+    background: linear-gradient(
+        180deg,
+        rgba(243,231,201,0.45),
+        rgba(255,255,255,0.4),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.25),
+            rgba(22,166,182,0.05),
+        )
+    );
+}
+
+.quadro-info,
+.painel-duplo {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap:1.4rem,
+}
+
+.quadro-info{
+    padding: 1.5rem;
+
+}
+
+.coluna-info {
+    padding: 0.4rem;
+}
+
+.lista-tag {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap:0.7rem;
+    padding-left: 1.2rem;
+}
+
+.formulario-avancado textarea {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border-radius: 16px;
+    border: 1px solid;
+    font: inherit;
+    background: #ffffff;
+    resize: vertical;
+
+}
+
+.grupo-botoes {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+
+}
+
+.grupo-botoes button {
+    flex: 1 1 220px;
+
+}
+
+.botao-alternatico {
+    background: var(--coral) !important;
+}
+
+/*segunda pagina | recursos html5 + css avançado*/
+
+.painel-detalhes {
+    border: 1px solid rgba(243,231,201,0.45);
+    border-radius: 18px;
+    padding: 1rem 1.1rem;
+    background: rgba(22,166,182,0.05);
+    /*padding para uso do padding e margin */
+}
+
+.painel-detalhes summary {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.bloco-editado {
+    min-height: 130px;
+    padding: 1rem;
+    border: 2px dashed rgba(10,92,120,0.35);
+    border-radius: 18px;
+    background: rgba(250,250,241, 0.8);
+
+}
+
+.area-drag{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.cartao-arrastavel,
+.alvo-drop{
+    min-height: 110px ;
+    padding: 1rem;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.cartao-arrastavel{
+    background: linear-gradient(
+        160deg,
+        rgba(10,92,120,0.9)
+        rgba(22,166,182,0.75)
+    );
+
+    color: #ffffff;
+    cursor: grab;
+}
+
+.cartao-arrastavel.arrastando {
+    opacity: 0.55;
+    cursor: grabbing;
+
+}
+
+.alvo-drop {
+    border: 2px dashed rgba(235,111,77,0.92);
+    background: rgba(243,241,201,0.55);
+    align-content: start;
+    gap: 0.8rem;
+
+}
+
+.alvo-drop.drop-ativo {
+    border-color: var(--oceano-profundo);
+    background: rgba(22,166,182,0.14);
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+.titulo-drop {
+    margin:0;
+    font-weight: 700;
+    color: var(--oceano-profundo)
+}
+
+.campo-revisao {
+    width: 100px;
+    padding: 0.95rem 1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(7,59,76,0.16);
+    font:inherit;
+}
+
+
+/*aula 08/05/2026*/
+/*continuar a construção do css conforme explicação do enunciado no canvas*/
+/*próxima class a ser tratada > barra-ferramentas */
+/*rodar javascript que gera as paginas 2 e 3 HTML , orientações estarão no enunciado*/
+/*0.5 > parte 3 em sala de aula*/
+/*0,5 > parte 4 Finalizar CSS e entregar prints com todos os HTML*/
+
+/*Guilherme Ferreira Agostinho*/
+/*RA:251982*/
